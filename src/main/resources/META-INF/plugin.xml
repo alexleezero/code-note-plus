@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>org.bravo.jetbrains.plugins.code-note-plus</id>
+    <name>Code Note Plus</name>
+    <version>1.0</version>
+    <vendor email="530328032@qq.com" url="https://github.com/alexleezero">AlexLee</vendor>
+
+    <description><![CDATA[
+    A tools for code note <br>
+        1. your can mark the code as the note <br>
+
+    针对于代码笔记的一个工具 <br>
+        1. 可以标记代码作为笔记 <br>
+
+    ]]></description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <codeInsight.lineMarkerProvider
+                language=""
+                implementationClass="org.bravo.code.note.plus.action.org.bravo.code.note.plus.extension.SimpleLineMarkerProvider"/>
+    </extensions>
+
+
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="AddNoteAction" class="org.bravo.code.note.plus.action.org.bravo.code.note.plus.action.AddNoteAction"
+                text="Add Code Note" description="Add code note">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt P"/>
+        </action>
+    </actions>
+</idea-plugin>

@@ -1,0 +1,10 @@
+/**/.idea
+/**/*.iml
+/**/target/*
+/data
+/logs
+/**/logs/**
+/**/.DS_Store
+.gradle/*
+/gradle/**
+/build/**
