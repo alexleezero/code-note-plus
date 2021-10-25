@@ -19,6 +19,9 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <applicationService
+                serviceImplementation="org.bravo.code.note.plus.action.org.bravo.code.note.plus.extension.service.TestPersistentService"/>
+
         <codeInsight.lineMarkerProvider
                 language=""
                 implementationClass="org.bravo.code.note.plus.action.org.bravo.code.note.plus.extension.SimpleLineMarkerProvider"/>

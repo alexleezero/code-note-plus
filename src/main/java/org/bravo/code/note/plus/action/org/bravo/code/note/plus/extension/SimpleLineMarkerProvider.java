@@ -4,18 +4,9 @@ import com.intellij.codeInsight.daemon.RelatedItemLineMarkerInfo;
 import com.intellij.codeInsight.daemon.RelatedItemLineMarkerProvider;
 import com.intellij.codeInsight.navigation.NavigationGutterIconBuilder;
 import com.intellij.psi.PsiElement;
-import com.intellij.util.RetinaImage;
-import com.intellij.util.io.IOUtil;
 import org.bravo.code.note.plus.action.org.bravo.code.note.plus.util.ImageHelper;
 import org.jetbrains.annotations.NotNull;
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import java.awt.*;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Base64;
 import java.util.Collection;
 
 /**

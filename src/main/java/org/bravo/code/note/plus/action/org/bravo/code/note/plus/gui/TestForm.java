@@ -1,5 +1,7 @@
 package org.bravo.code.note.plus.action.org.bravo.code.note.plus.gui;
 
+import org.apache.commons.lang3.StringUtils;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -13,10 +15,11 @@ public class TestForm {
     private JButton button1;
     private JButton button2;
 
-    public static void show() {
+    public static void show(String title) {
         JDialog dialog = new JDialog();
 
-        dialog.setTitle("我的标题");
+        title = StringUtils.isEmpty(title) ? "我的标题" : title;
+        dialog.setTitle(title);
 
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int w = (screenSize.width - 800) / 2;
